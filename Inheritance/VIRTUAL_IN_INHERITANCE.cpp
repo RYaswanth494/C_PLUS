@@ -6,13 +6,13 @@ void A_show(){
     cout<<"class A";
 }
 };
-class B:public virtual A{
+class B:public  A{
 public:
 void B_show(){
     cout<<"class B";
 }
 };
-class C:public virtual A{
+class C:public  A{
 public:
 void C_show(){
     cout<<"class C";
@@ -20,11 +20,13 @@ void C_show(){
 };
 class D:public B,public C{
 public:
-void D_show(){
+virtual void D_show(){
     cout<<"class D";
 }
 };
 int main(){
     D obj;
-    obj.A_show();
+    obj.B::A_show();
+    obj.C::A_show();
+
 }
