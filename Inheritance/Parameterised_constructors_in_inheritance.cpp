@@ -47,5 +47,4 @@ void DERIVED::show_derived(){
 int main(){
     DERIVED d("Yaswanth",494,89,76,99);
     d.show_derived();
-      cout << "---- End of main ----\n"; 
 }
